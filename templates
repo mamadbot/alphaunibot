@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>Alpha University</title>
+    <style>
+        body {
+            background-color: #0b1016;
+            font-family: "Vazir", sans-serif;
+            color: #d4af37;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding-top: 50px;
+        }
+        .box {
+            border: 2px solid #d4af37;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 30px;
+            width: 80%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        img {
+            max-width: 300px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+        <div class="box">
+            <h1>به ربات AlphaUniBot خوش اومدی</h1>
+            <p>جهت آموزش مهارت‌های اجتماعی و فروش اشتراک VIP</p>
+            <p>برای ورود به ربات تلگرام، آیدی <b>@Alpha_unibot</b> را جستجو کن</p>
+        </div>
+    </div>
+</body>
+</html>
