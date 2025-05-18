@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, render_template
 import requests
 import json
 
@@ -6,11 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return '''
-    <h1>ربات AlphaUniBot</h1>
-    <p>این ربات جهت آموزش مهارت‌های اجتماعی و فروش اشتراک VIP طراحی شده است.</p>
-    <p>برای ورود به ربات تلگرام، آیدی <b>@Alpha_unibot</b> را جستجو کنید.</p>
-    '''
+    return render_template('index.html')
 
 @app.route('/verify')
 def verify():
